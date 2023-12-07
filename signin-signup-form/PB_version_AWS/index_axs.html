@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="styles_aws.css"> <!-- Make sure this links to your CSS file -->
+</head>
+<body class="background-customizable">
+    <div class="banner-customizable">
+      <img src="/signin-signup-form/pdq-logo-dark.svg" alt="Your Logo" class="logo-customizable">
+    </div>
+
+    <form action="/login" method="post" class="form-customizable">
+      <h2 class="textDescription-customizable">Sign in with your username and password</h2>
+      <div class="form-group">
+          <label for="username" class="label-customizable">Username</label>
+          <input type="text" id="username" name="username" placeholder="Username" required class="inputField-customizable">
+      </div>
+      <div class="form-group">
+          <label for="password" class="label-customizable">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required class="inputField-customizable">
+      </div>
+      <div class="form-group redirect-customizable">
+          <a href="/forgot-password" class="legalText-customizable">Forgot your password?</a>
+      </div>
+      <div class="form-group">
+          <button type="submit" class="submitButton-customizable">Sign in</button>
+      </div>
+      <div class="form-group redirect-customizable">
+          <p class="legalText-customizable">Need an account? <a href="/signup" class="legalText-customizable">Sign up</a></p>
+      </div>
+      <!-- Add any error message display -->
+      <div class="errorMessage-customizable" style="display: none;">Error Message Here</div>
+    </form>
+</body>
+</html>
