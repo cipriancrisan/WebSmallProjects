@@ -2,10 +2,12 @@
 .logo-customizable {
   max-width: 100%;
   max-height: 50%;
+  background-color: transparent;
 }
 
 .banner-customizable {
   padding: 25px 0px 25px 0px;
+  background-color: transparent;
 }
 
 .label-customizable {
